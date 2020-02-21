@@ -1,12 +1,21 @@
-.score-wraper {
+.score-body {
     width: 1424px;
     height: 810px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.score-wraper {
+    width: 845px;
     background-color: #ffffff;
     padding: 0;
     margin: 0 auto;
 }
 
-.score-header {}
+.score-header {
+    padding-top: 30px;
+    margin: 0 auto;
+}
 
 .header-logo-img {
     width: 205px;
@@ -16,6 +25,8 @@
 .score-header-text {
     width: 100%;
     font-family: Roboto;
+    display: block;
+    padding-top: 80px;
 }
 
 .score-header-text-span-left {
@@ -31,12 +42,61 @@
     color: #1a77d2;
 }
 
-.score-header-text-span-right {}
+.score-header-text-span-right {
+    width: 107px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #1a77d2;
+}
+
+.score-content-wraper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 28px;
+}
+
+.score-form-textarea {
+    width: 410px;
+    height: 104px;
+    border-radius: 5px;
+    border: solid 1px #dadada;
+}
+
+.score-form-text {
+    width: 155px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #333333;
+}
 
 .score-img {
-    width: 404px;
-    height: 302px;
+    width: 404px !important;
+    height: 302px !important;
     object-fit: contain;
 }
 
-.score-question-text {}
+.score-question-text {
+    width: 747px;
+    height: 45px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #000000;
+    padding-top: 26px;
+}
