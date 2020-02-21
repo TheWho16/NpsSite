@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nps.css">
+    <title>Score</title>
+
+</head>
+
+<body>
+    <div class="score-wraper">
+        <header class="score-header">
+            <img class="header-logo-img" alt="logo" src="https://yii.dbroker.com.ua/images/email_images/nps-img/logo/logo-color-group-42@3x.png" style="outline: none;-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;width: 205px;height: 52px;object-fit: contain;">
+        </header>
+        <div class="score-header-text">
+            <span class="score-header-text-span-left">
+                Спасибо за вашу оценку: 9
+            </span>
+            <span class="score-header-text-span-right">
+                <a>Изменить оценку</a>
+            </span>
+        </div>
+        <div class="score-question-text">
+            <p>
+                Вы можете уточнить, что Вам понравилось, или внести предложения по улучшению качества нашей работы. Помогите нам стать еще лучше, ведь нет предела совершенству!
+            </p>
+        </div>
+        <div class="score-content-wraper">
+            <div class="score-content-form">
+                <div id="score-form-wrapper">
+                    <div class="score-form-text">
+                        Комментарий:
+                    </div>
+                    <form action="/nps-polls/<?= $hash; ?>/thank" method="POST">
+                        <div class="score-form-textarea">
+                            <textarea rows="8" style="resize: none;" class="element-position-center text-area" name="value"></textarea>
+                        </div>
+                        <input type="hidden" value="<?=$hash?>" name="hash">
+                        <input type="hidden" value="<?=$score?>" name="score">
+                        <input type="hidden" value="<?=$customer->name?>" name="name">
+                        <input type="submit" id="send-score" class="element-position-center" value="Отправить">
+                    </form>
+                </div>
+            </div>
+            <div class="score-content-img">
+                <img alt="score-img" class="score-img" src="./img/group-5@3x.png" />
+            </div>
+        </div>
+        <hr>
+        <div class="score-footer">
+            <footer>
+                <div class="score-footer-text-wraper">
+                    <p class="score-footer-text">
+                        Вы совершили покупку в нашем интернет-магазине, поэтому мы пригласили вас принять участие в опросе по качеству обслуживания. Если в дальнейшем вы не хотите участвовать в наших опросах - <a>нажмите
+                            здесь.</a>
+                    </p>
+                </div>
+                <div class="score-footer-logo-wraper">
+                    <img class="score-footer-logo" width="139.3px" alt="footer-img" src="https://yii.dbroker.com.ua/images/email_images/nps-img/logo/logo-gray-group-42-copy@3x.png" style="outline: none;-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;">
+
+                </div>
+                <div class="score-footer-text-wraper-down">
+                    <p class="score-footer-text">© Інтернет-магазин автозапчастин «DOK ™»</p>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
