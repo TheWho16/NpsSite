@@ -843,7 +843,7 @@ p {
 
 .td-radio-buttons-text-left,
 .td-radio-buttons-text-right {
-    width: 192px;
+    width: 200px;
     height: 15px;
     font-family: Roboto, Arial, Helvetica, Arial, Helvetica;
     font-size: 13px;
@@ -1136,6 +1136,24 @@ hr {
     padding: 0;
     margin-top: 160px;
     height: auto;
+    width: 100%;
+    display: block;
+}
+
+.rating-header-text h4 {
+    width: 600px;
+    height: 32px;
+    font-family: Roboto, Arial, Helvetica, Arial, Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 14px;
 }
 
 .rating-header-text p {
@@ -1149,6 +1167,15 @@ hr {
     line-height: 1.56;
     letter-spacing: normal;
     color: #000000;
+    margin: 0 auto;
+}
+
+.rating-content-hr {
+    background-color: #f5f5f5;
+    width: 99.9%;
+    border: solid 0.5px #dadada;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .rating-nps-content-wraper {
@@ -1158,4 +1185,69 @@ hr {
     margin: 0 auto;
     padding: 0;
     margin-bottom: 165px;
+}
+
+@media screen and (max-device-width: 768px) {
+    .rating-content-hr {
+        width: 102.7% !important;
+        padding: 0;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .rating-header-text {
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 160px;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .rating-header-text h4 {
+        width: 336px;
+        height: 19px;
+        font-family: Roboto, Arial, Helvetica, Arial, Helvetica;
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #333333;
+        margin: 0 auto;
+        margin-bottom: 14px;
+    }
+    .rating-header-text p {
+        width: 336px;
+        height: 25px;
+        font-family: Roboto, Arial, Helvetica, Arial, Helvetica;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.79;
+        letter-spacing: normal;
+        color: #000000;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+    .rating-header-text {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+    .rating-header-text h4 {
+        margin: 0 auto;
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+    .rating-header-text p {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .rating-content-hr {
+        width: 355px !important;
+    }
 }
